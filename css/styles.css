@@ -55,8 +55,8 @@ ul li {
     color: #fff;
 }
 
-.black-text {
-    color: black;
+.green-text {
+    color: #24b67e;
 }
 
 
@@ -67,4 +67,40 @@ nav {
 
 .white-bg {
     box-shadow: 0 6px 9px 0px #a5a5a5;
+}
+
+.white-underlined {
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+}
+.white-curPage {
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 53% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+}
+.white-curPage {
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    background-image: linear-gradient(#24b67e, #24b67e);
+    background-size: 53% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+}
+.underlined:hover,
+.underlined:focus,
+.underlined:active {
+    background-size: 53% 0.2em;
 }

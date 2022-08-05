@@ -6,8 +6,6 @@ $(document).ready(function() {
             scrollTop: $($(this).attr('href')).offset().top
         }, 500);
     })
-    let curScreen = 'home';
-    if (curScreen === 'home') $('.fixed-top a').addClass('white-text');
     $(window).on('scroll', function(e) {
         let homePage = ($(window).scrollTop() + $(window).innerHeight() > $("#home").offset().top) && ($(window).scrollTop() < $("#home").offset().top + $("#home").outerHeight());
         let aboutPage = ($(window).scrollTop() + $(window).innerHeight() > $("#about").offset().top) && ($(window).scrollTop() < $("#about").offset().top + $("#about").outerHeight());  
@@ -18,9 +16,13 @@ $(document).ready(function() {
 
 
         if (homePage){
-            console.log('Home Page!!');
+            $(".fixed-top .second-nav-div a:not(a[href='#home'])").removeClass('curPage').addClass('white-underlined');
+            $(".fixed-top .second-nav-div a[href='#home']").addClass('white-curPage').removeClass('white-underlined');
+            $('.fixed-top a').addClass('white-text').removeClass('black-text');
         } else if (aboutPage) {
-            console.log('About Page!!!');
+            $(".fixed-top .second-nav-div a:not(a[href='#about'])").removeClass('curPage').addClass('underlined');
+            $("a[href='#about']").addClass('curPage').removeClass('underlined');
+            $('.fixed-top a').addClass('green-text').removeClass('white-text');
         } else if (projectsPage) {
             console.log('Projects Page!!!');
         } else if (skillsPage) {

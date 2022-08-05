@@ -13,7 +13,7 @@
     width: 50%;
 }
 
-.col-eighty {
+.col-sixty {
     width: 60%;
 }
 
@@ -26,20 +26,16 @@
 
 .fixed-top {
     position: fixed;
-    top: 0;
+    top: 30px;
     right: 0;
     left: 0;
+    z-index: 1030;
 }
 .second-nav-div {
     justify-content: space-around;
     align-items: center;
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-}
 #home,
 #about,
 #projects,
@@ -59,6 +55,8 @@
 }
 .mainSubDiv {
     padding-top: 100px;
+    position: relative;
+
 }
 
 .headers {
@@ -72,3 +70,15 @@
     flex-direction: column;
 }
 
+.overlay-itro {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .9;
+}
+.intro-content {
+    position: absolute;
+}

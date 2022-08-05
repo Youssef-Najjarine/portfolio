@@ -62,4 +62,4 @@ setInterval(function () {
       curProgrammerIndexReversed = programmer.length - 1;
     }
   }
-}, 100);
+}, 200);
