@@ -32,13 +32,19 @@ a {
     transition:all 0.5s ease-in-out;
     text-decoration: none;
     background-color: transparent;
-    text-transform: uppercase;
 }
 
-ul li {
+a.scrollLink,
+a[download='myResume'] {
+    text-transform: uppercase;
+}
+ul:not(.project-desc) li {
     list-style-type: none;
 }
 
+.project-desc {
+    padding-left: 12px;
+}
 .nav {
     font-weight: 600;
 }
@@ -46,7 +52,7 @@ ul li {
 .first-nav-div {
     font-size: 1.5rem;
 }
-  
+
 .second-nav-div {
     font-size: 1rem;
 }
@@ -163,8 +169,8 @@ nav {
 }
 
 .title-left-contact:after {
-    content: ""; 
-    display: block; 
+    content: "";
+    display: block;
     margin-left: 32%;
     width: 25%;
     padding-top: 5px;
@@ -179,7 +185,7 @@ nav {
 
 .about-me-lead {
     font-size: 100%;
-    
+
 }
 p {
     margin-top: 0;
@@ -227,7 +233,7 @@ p {
 }
 
 .work-content {
-    padding: 2rem 3% 1rem 4%;
+    padding: 2rem 3% 2rem 4%;
 }
 
 .w-title {
@@ -261,8 +267,7 @@ p {
 }
 
 .work-content .w-more {
-    color: #4e4e4e;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 #projects .col-thirty {
