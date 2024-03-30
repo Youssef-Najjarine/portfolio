@@ -22,6 +22,7 @@ h3 {
 }
 .col-fifty {
     width: 50%;
+    max-width: 50%;
 }
 
 .col-sixty {
@@ -56,7 +57,9 @@ h3 {
     align-items: center;
 }
 
-
+.project-desc li {
+    margin-bottom: 10px;
+}
 #about{
 padding-top: 25px;
 }
@@ -64,7 +67,7 @@ padding-top: 25px;
 #templates {
     display: none;
 }
-.div-with-bg{
+.div-with-bg {
     background-image: url('../images/intro-bg.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -178,12 +181,15 @@ padding-top: 25px;
 }
 
 .place-holder-img {
-    width: 370px;
+    width: 360px;
     border-radius: 10px;
 }
 
-.cur-company-logo {
-    width: 500px;
+.margin-top-none {
+    margin-top: 0;
+}
+.cur-github-contributions {
+    width: 530px;
     border-radius: 10px;
 }
 
@@ -259,4 +265,101 @@ padding-top: 25px;
 
 .col-8 {
     max-width: 69.6667%;
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+
+@media (min-width: 577px) {
+    .counter-box {
+        margin-bottom: 1.8rem;
+    }
+}
+
+@media (min-width: 767px) {
+    .about-mf .box-pl2 {
+        margin-top: 3rem;
+        padding-left: 0rem;
+    }
+
+    .card-blog {
+        margin-bottom: 3rem;
+    }
+
+    .contact-mf .box-pl2 {
+        margin-top: 3rem;
+        padding-left: 0rem;
+    }
+}
+
+@media (min-width: 912px) {
+    .box-shadow-full {
+        padding: 3rem;
+    }
+
+    .navbar-b.navbar-trans .nav-item,
+    .navbar-b.navbar-reduce .nav-item {
+        padding-left: 10px;
+    }
+
+    .navbar-b.navbar-trans .nav-link:before,
+    .navbar-b.navbar-reduce .nav-link:before {
+        margin-left: 18px;
+    }
+
+    .intro .intro-title {
+        font-size: 4.5rem;
+    }
+
+    .intro .intro-subtitle {
+        font-size: 2.5rem;
+    }
+
+    .intro-single .intro-title {
+        font-size: 3.5rem;
+    }
+
+    .testimonial-box .description {
+        padding: 0 5rem;
+    }
+
+    .post-box,
+    .form-comments,
+    .box-comments,
+    .widget-sidebar {
+        padding: 3rem;
+    }
+
+    .blog-wrapper .article-title {
+        font-size: 1.9rem;
+    }
+
+    .box-comments .list-comments .comment-author {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonial-box .description {
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonial-box .description {
+        padding: 0 13rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 15px;
+    }
 }
