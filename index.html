@@ -1,527 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef Najjarine Portfolio</title>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <script defer src="js/core-functionality.js"></script>
-    <script defer src="js/phraseGenerator.js"></script>
-    <script defer src="js/skills-tools-generator.js"></script>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/layout.css"/>
-    <link rel="stylesheet" href="css/devicon.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</head>
-<body>
-    <nav class="col-full fixed-top">
-        <div id="nav-container" class="row nav">
-            <div class="col-forty first-nav-div">
-                <a href="#home" class="scrollLink white-text">Youssef Najjarine</a>
-            </div>
-            <div class="row col-sixty second-nav-div">
-                <a href="#home" class="scrollLink white-curPage white-text">home</a>
-                <a href="#about" class="scrollLink white-underlined white-text">about</a>
-                <a href="#projects" class="scrollLink white-underlined white-text">projects</a>
-                <a href="#skills" class="scrollLink white-underlined white-text">skills</a>
-                <a href="#tools" class="scrollLink white-underlined white-text">tools</a>
-                <a href="#contact" class="scrollLink white-underlined white-text">contact</a>
-                <a href="https://drive.google.com/file/d/15wwo1cKvs7kHcA5h6_ulBtiMXLvy9zbr/view" download="myResume" target="_blank" class="white-underlined white-text">resume</a>
-            </div>
-        </div>
-    </nav>
-    <section id="home">
-                <div class="div-with-bg">
-                    <div class="overlay-itro"></div>
-                    <div class="mainSubDiv">
-                        <div class="row phrase-div">
-                        <h1>Youssef Najjarine</h1>
-                            <div class="row"><p id="phraseGenerator"></p><span>/</span></div>
-                        </div>
-                    </div>
-            </div>
-    </section>
-    <section id="about" class="page-container">
-        <div class="box-shadow-full">
-                <div class="row col-full justify-content-center">
-                    <div class="col-fifty profile-div"><img src="images/profile-pic-3.jpg" class="place-holder-img"/></div>
-                    <div class="col-fifty"><h2 class="margin-top-none">GitHub Contributions</h2><img src="images/gitHubContributions.png" class="cur-github-contributions"/></div>
-                </div>
-                <div class="socials col-full">
-                    <ul class="row">
-                        <li>
-                            <a href="https://github.com/Youssef-Najjarine" target="_blank">
-                                <span class="ico-circle">
-                                    <i class="fa-brands fa-github about-ico"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/youssefnajjarine/" target="_blank">
-                                <span class="ico-circle">
-                                    <i class="fa-brands fa-linkedin about-ico"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/15wwo1cKvs7kHcA5h6_ulBtiMXLvy9zbr/view" download="myResume" target="_blank">
-                                <span class="ico-circle">
-                                    <i class="fa-solid fa-file about-ico"></i>
-                                </span>
-                        </li>
-                        <li>
-                            <a href="mailto:ynajjarine@gmail.com">
-                                <span class="ico-circle">
-                                    <i class="fa-solid fa-envelope about-ico"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="title-box-2">
-                    <h3 class="title-left">About me</h3>
-                    <div class="title-left-underline"></div>
-                </div>
-                <p class="lead about-me-lead">
-                    I am a software engineer based in Dallas, Texas. All I do is eat, code, sleep, and repeat. Scroll down and check out some of my projects!
-                </p>
-        </div>
 
-    </section>
-    <section id="projects" class="page-container">
-        <div class="mainSubDiv">
-            <div class="col-full  headers">
-                <h3 class="title-a">Projects</h3>
-                <div class="line-mf"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youssef Najjarine Portfolio</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script defer src="js/core-functionality.js"></script>
+  <script defer src="js/phraseGenerator.js"></script>
+  <script defer src="js/skills-tools-generator.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/devicon.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <nav class="col-full fixed-top">
+    <div id="nav-container" class="row nav">
+      <div class="col-forty first-nav-div">
+        <a href="#home" class="scrollLink white-text">Youssef Najjarine</a>
+      </div>
+      <div class="row col-sixty second-nav-div">
+        <a href="#home" class="scrollLink white-curPage white-text">home</a>
+        <a href="#about" class="scrollLink white-underlined white-text">about</a>
+        <a href="#projects" class="scrollLink white-underlined white-text">projects</a>
+        <a href="#skills" class="scrollLink white-underlined white-text">skills</a>
+        <a href="#tools" class="scrollLink white-underlined white-text">tools</a>
+        <a href="#contact" class="scrollLink white-underlined white-text">contact</a>
+        <a href="https://drive.google.com/file/d/1b1zGiaI-sFBNtn4Wco1cgVZ5kbuZZya7/view" download="myResume"
+          target="_blank" class="white-underlined white-text">resume</a>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="div-with-bg">
+      <div class="overlay-itro"></div>
+      <div class="mainSubDiv">
+        <div class="row phrase-div">
+          <h1>Youssef Najjarine</h1>
+          <div class="row">
+            <p id="phraseGenerator"></p><span>/</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="page-container">
+    <div class="box-shadow-full">
+      <div class="row col-full justify-content-center">
+        <div class="col-fifty profile-div"><img src="images/profile-pic-3.jpg" class="place-holder-img" /></div>
+        <div class="col-fifty">
+          <h2 class="margin-top-none">GitHub Contributions</h2><img src="images/gitHubContributions.png"
+            class="cur-github-contributions" />
+        </div>
+      </div>
+      <div class="socials col-full">
+        <ul class="row">
+          <li>
+            <a href="https://github.com/Youssef-Najjarine" target="_blank">
+              <span class="ico-circle">
+                <i class="fa-brands fa-github about-ico"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/youssefnajjarine/" target="_blank">
+              <span class="ico-circle">
+                <i class="fa-brands fa-linkedin about-ico"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/15wwo1cKvs7kHcA5h6_ulBtiMXLvy9zbr/view" download="myResume"
+              target="_blank">
+              <span class="ico-circle">
+                <i class="fa-solid fa-file about-ico"></i>
+              </span>
+          </li>
+          <li>
+            <a href="mailto:ynajjarine@gmail.com">
+              <span class="ico-circle">
+                <i class="fa-solid fa-envelope about-ico"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="title-box-2">
+        <h3 class="title-left">About me</h3>
+        <div class="title-left-underline"></div>
+      </div>
+      <p class="lead about-me-lead">
+        I am a software engineer based in Dallas, Texas. All I do is eat, code, sleep, and repeat. Scroll down and check
+        out some of my projects!
+      </p>
+    </div>
+
+  </section>
+  <section id="projects" class="page-container">
+    <div class="mainSubDiv">
+      <div class="col-full  headers">
+        <h3 class="title-a">Projects</h3>
+        <div class="line-mf"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-thirty">
+        <div class="workbox">
+          <a href="https://github.com/Youssef-Najjarine/fitness-pal?tab=readme-ov-file" target="_blank">
+            <svg width="80" height="80" viewBox="0 0 250 250"
+              style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+              <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+              <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+              <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+            </svg>
+          </a>
+          <a href="https://raw.githubusercontent.com/Youssef-Najjarine/fitness-pal/master/full-fitnessPalDemo.gif"
+            target="_blank">
+            <div class="work-img">
+              <img src="images/fitnessPaL.png" alt="Fitness PaL Home Screen" class="img-fluid">
             </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-8">
+                  <h2 class="w-title">Fitness PaL</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Full Stack Web Application</span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="w-more">
+                    <ul class="project-desc">
+                      <li>
+                        Constructed RESTful APIs using HTML5, CSS3, React.js and Express.js endpoints that validate
+                        parameter
+                        inputs, handle errors, and deliver relevant data to the user so they can keep track of their
+                        exercise and meal
+                        plans for the week.
+                      </li>
+                      <li>
+                        Built a component that edits entries by utilizing Express.js endpoints by looping through the
+                        meals or
+                        exercises table to find the exact entry clicked on then populate the corresponding inputs with
+                        the data.
+                      </li>
+                      <li>Stored and retrieved data from previous sessions utilizing JSON.</li>
+                      <li>
+                        Added a delete feature by using response data retrieved from the database and eliminating the
+                        meal or
+                        exercise selected.
+                      </li>
+                      <li>
+                        Designed and built a calorie calculator component that seamlessly takes in user body
+                        measurements,
+                        then displaying the current Basal metabolic rate (BMR).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-thirty">
+        <div class="workbox">
+          <a href="https://github.com/Youssef-Najjarine/anime-fans?tab=readme-ov-file" target="_blank">
+            <svg width="80" height="80" viewBox="0 0 250 250"
+              style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+              <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+              <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+              <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+            </svg>
+          </a>
+          <a href="https://user-images.githubusercontent.com/71291742/145110268-b60c0a8d-8cb5-409f-9b7f-e9fd378bbf58.gif"
+            target="_blank">
+            <div class="work-img">
+              <img src="images/animeTrivia.png" alt="test your anime trivia skills with this trivia app."
+                class="img-fluid">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-8">
+                  <h2 class="w-title">Anime Fans</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Full Stack Web Application</span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="w-more">
+                    <ul class="project-desc">
+                      <li>Developed a dynamic trivia app that tests a person's knowledge on Anime shows.</li>
+                      <li>
+                        Engineered a review feature by requesting data from a public API and implementing
+                        AJAX to display query results.
+                      </li>
+                      <li>Designed sitemap using Figma's wireframing tools to better plan for and organize the
+                        application.</li>
+                      <li>Applied CSS3 media queries to achieve an application that is more responsive towards mobile
+                        users.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-thirty">
+        <div class="workbox">
+          <a href="https://github.com/Youssef-Najjarine/student-profile-2088?tab=readme-ov-file" target="_blank">
+            <svg width="80" height="80" viewBox="0 0 250 250"
+              style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+              <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+              <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+              <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+            </svg>
+          </a>
+          <a href="https://user-images.githubusercontent.com/71291742/153488000-5d5fcdc5-5e32-4921-b5fa-83fc093e8d39.gif"
+            target="_blank">
+            <div class="work-img">
+              <img src="images/profileSearch.png" alt="profile search and manipulator" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-8">
+                  <h2 class="w-title">Profile Manager</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Full Stack Web Application</span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="w-more">
+                    <ul class="project-desc">
+                      <li>Web Application constructed to view, search, and edit student profiles.</li>
+                      <li>
+                        Tech stack utilized:<br>
+                        -JavaScript<br>
+                        - React.js<br>
+                        - Node.js<br>
+                        - Express.js<br>
+                        - MySQL<br>
+                        - PostreSQL<br>
+                        - HTML5<br>
+                        - CSS3<br>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-thirty">
+        <div class="workbox">
+          <a href="https://github.com/Youssef-Najjarine/driving-game" target="_blank">
+            <svg width="80" height="80" viewBox="0 0 250 250"
+              style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+              <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+              <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+              <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+            </svg>
+          </a>
+          <a href="https://raw.githubusercontent.com/Youssef-Najjarine/driving-game/master/driving-game-demo.gif"
+            target="_blank">
+            <div class="work-img">
+              <img src="images/drivingGame.png" alt="Driving game meant to test your steering abilities."
+                class="img-fluid">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-8">
+                  <h2 class="w-title">Driving Game</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Application</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="w-more">
+                    <ul class="project-desc">
+                      <li>A fun and simple HTML5, CSS, and JavaScript driving game.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-thirty">
+        <div class="workbox">
+          <a href="https://github.com/Youssef-Najjarine/code-journal?tab=readme-ov-file" target="_blank">
+            <svg width="80" height="80" viewBox="0 0 250 250"
+              style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+              <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+              <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+              <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+            </svg>
+          </a>
+          <a href="https://raw.githubusercontent.com/Youssef-Najjarine/code-journal/master/code-journal-demo.gif"
+            target="_blank">
+            <div class="work-img">
+              <img src="images/codeJournal.png" alt="code journal meant for creating entries" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-8">
+                  <h2 class="w-title">Code Journal</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Application</span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="w-more">
+                    <ul class="project-desc">
+                      <li>A dynamic HTML5, CSS3, and JavaScript journal application for coders who want to capture their
+                        notes.</li>
+                      <li>Stored journal entries into localStorage using JSON.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-thirty">
+        <div class="workbox">
+          <a href="https://github.com/Youssef-Najjarine/week-planner?tab=readme-ov-file" target="_blank">
+            <svg width="80" height="80" viewBox="0 0 250 250"
+              style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+              <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+              <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+              <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+            </svg>
+          </a>
+          <a href="https://raw.githubusercontent.com/Youssef-Najjarine/week-planner/master/imgs/weekly-planner-demo.gif"
+            target="_blank">
+            <div class="work-img">
+              <img src="images/weeklyPlanner.png" alt="An app meant for plannig out your week" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-8">
+                  <h2 class="w-title">Weekly Planner</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Application</span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="w-more">
+                    <ul class="project-desc">
+                      <li>A weekly planner app built using HTML5, CSS3, and vanilla JavaScript.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="page-container">
+      <div class="mainSubDiv">
+        <div class="col-full headers">
+          <h3 class="title-a">Skills</h3>
+          <div class="line-mf"></div>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </section>
+  <section id="tools">
+    <div class="page-container">
+      <div class="mainSubDiv">
+        <div class="col-full headers">
+          <h3 class="title-a">Tools</h3>
+          <div class="line-mf"></div>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </section>
+  <section id="contact" class="contact-bg">
+    <div class="overlay-mf"></div>
+    <div class="page-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div class="box-shadow-full-contact contact-white-box">
+              <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                  <div class="title-box-2">
+                    <h5 class="title-left-contact">Thank You</h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">I am willing and able to relocate at short notice.</p>
+                    <ul class="list-ico">
+                      <li>
+                        <span class="ion-ios-location"><i class="fa-solid fa-location-dot"></i>Dallas County, TX
+                          75039</span>
+                      </li>
+                      <li>
+                        <a href="tel:+19497359148"><i class="fa-solid fa-phone"></i>(949) 735 - 9148</a>
+                      </li>
+                      <li>
+                        <a href="mailto:ynajjarine@gmail.com"><i
+                            class="fa-solid fa-envelope"></i>ynajjarine@gmail.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="socials col-full">
+                    <ul class="row">
+                      <li>
+                        <a href="https://github.com/Youssef-Najjarine" target="_blank">
+                          <span class="ico-circle">
+                            <i class="fa-brands fa-github about-ico"></i>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/youssefnajjarine/" target="_blank">
+                          <span class="ico-circle">
+                            <i class="fa-brands fa-linkedin about-ico"></i>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://drive.google.com/file/d/1b1zGiaI-sFBNtn4Wco1cgVZ5kbuZZya7/view"
+                          download="myResume" target="_blank">
+                          <span class="ico-circle">
+                            <i class="fa-solid fa-file about-ico"></i>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mailto:ynajjarine@gmail.com">
+                          <span class="ico-circle">
+                            <i class="fa-solid fa-envelope about-ico"></i>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row">
-            <div class="col-thirty">
-              <div class="workbox">
-                <a href="https://github.com/Youssef-Najjarine/fitness-pal?tab=readme-ov-file" target="_blank">
-                  <svg width="80" height="80" viewBox="0 0 250 250"
-                    style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                    <path
-                      d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                      fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                    <path
-                      d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                      fill="currentColor" class="octo-body"></path>
-                  </svg>
-                </a>
-                <a href="https://raw.githubusercontent.com/Youssef-Najjarine/fitness-pal/master/full-fitnessPalDemo.gif"
-                  target="_blank">
-                  <div class="work-img">
-                    <img src="images/fitnessPaL.png" alt="Fitness PaL Home Screen" class="img-fluid">
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-8">
-                        <h2 class="w-title">Fitness PaL</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Full Stack Web Application</span>
-                        </div>
-                      </div>
+          <p class="copyright">© Youssef Najjarine 2022. All logos appearing on site are the property of their
+            respective owners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="templates">
+    <div class="col-thirty skills-template">
+      <div class="service-box">
+        <div class="service-icon">
+          <span class="icon-circle">
+            <i class="icons"></i>
+          </span>
+        </div>
+        <div>
+          <h2 class="s-title"></h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-thirty skills-img-template">
+      <div class="service-box">
+        <div class="service-icon">
+          <span class="icon-circle">
+            <img class="img-icons" />
+          </span>
+        </div>
+        <div>
+          <h2 class="s-title"></h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
 
-                      <div class="col-12">
-                        <div class="w-more">
-                          <ul class="project-desc">
-                            <li>
-                              Constructed RESTful APIs using HTML5, CSS3, React.js and Express.js endpoints that validate parameter
-                              inputs, handle errors, and deliver relevant data to the user so they can keep track of their exercise and meal
-                              plans for the week.
-                            </li>
-                            <li>
-                              Built a component that edits entries by utilizing Express.js endpoints by looping through the meals or
-                              exercises table to find the exact entry clicked on then populate the corresponding inputs with the data.
-                            </li>
-                            <li>Stored and retrieved data from previous sessions utilizing JSON.</li>
-                            <li>
-                              Added a delete feature by using response data retrieved from the database and eliminating the meal or
-                              exercise selected.
-                            </li>
-                            <li>
-                              Designed and built a calorie calculator component that seamlessly takes in user body measurements,
-                              then displaying the current Basal metabolic rate (BMR).
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-thirty">
-              <div class="workbox">
-                <a href="https://github.com/Youssef-Najjarine/anime-fans?tab=readme-ov-file" target="_blank">
-                  <svg width="80" height="80" viewBox="0 0 250 250"
-                    style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                    <path
-                      d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                      fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                    <path
-                      d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                      fill="currentColor" class="octo-body"></path>
-                  </svg>
-                </a>
-                <a href="https://user-images.githubusercontent.com/71291742/145110268-b60c0a8d-8cb5-409f-9b7f-e9fd378bbf58.gif"
-                  target="_blank">
-                  <div class="work-img">
-                    <img src="images/animeTrivia.png" alt="test your anime trivia skills with this trivia app." class="img-fluid">
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-8">
-                        <h2 class="w-title">Anime Fans</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Full Stack Web Application</span>
-                        </div>
-                      </div>
+    <div class="col-thirty tools-template">
+      <div class="service-box">
+        <div class="service-icon">
+          <span class="icon-circle">
+            <img class="img-icons" />
+          </span>
+        </div>
+        <div>
+          <h2 class="s-title"></h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
 
-                      <div class="col-12">
-                        <div class="w-more">
-                          <ul class="project-desc">
-                            <li>Developed a dynamic trivia app that tests a person's knowledge on Anime shows.</li>
-                            <li>
-                              Engineered a review feature by requesting data from a public API and implementing
-                              AJAX to display query results.
-                            </li>
-                            <li>Designed sitemap using Figma's wireframing tools to better plan for and organize the application.</li>
-                            <li>Applied CSS3 media queries to achieve an application that is more responsive towards mobile users.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-thirty">
-              <div class="workbox">
-                <a href="https://github.com/Youssef-Najjarine/student-profile-2088?tab=readme-ov-file" target="_blank">
-                  <svg width="80" height="80" viewBox="0 0 250 250"
-                    style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                    <path
-                      d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                      fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                    <path
-                      d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                      fill="currentColor" class="octo-body"></path>
-                  </svg>
-                </a>
-                <a href="https://user-images.githubusercontent.com/71291742/153488000-5d5fcdc5-5e32-4921-b5fa-83fc093e8d39.gif"
-                  target="_blank">
-                  <div class="work-img">
-                    <img src="images/profileSearch.png" alt="profile search and manipulator" class="img-fluid">
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-8">
-                        <h2 class="w-title">Profile Manager</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Full Stack Web Application</span>
-                        </div>
-                      </div>
-
-                      <div class="col-12">
-                        <div class="w-more">
-                          <ul class="project-desc">
-                            <li>Web Application constructed to view, search, and edit student profiles.</li>
-                            <li>
-                              Tech stack utilized:<br>
-                              -JavaScript<br>
-                              - React.js<br>
-                              - Node.js<br>
-                              - Express.js<br>
-                              - MySQL<br>
-                              - PostreSQL<br>
-                              - HTML5<br>
-                              - CSS3<br>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-thirty">
-              <div class="workbox">
-                <a href="https://github.com/Youssef-Najjarine/driving-game" target="_blank">
-                  <svg width="80" height="80" viewBox="0 0 250 250"
-                    style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                    <path
-                      d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                      fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                    <path
-                      d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                      fill="currentColor" class="octo-body"></path>
-                  </svg>
-                </a>
-                <a href="https://raw.githubusercontent.com/Youssef-Najjarine/driving-game/master/driving-game-demo.gif"
-                  target="_blank">
-                  <div class="work-img">
-                    <img src="images/drivingGame.png" alt="Driving game meant to test your steering abilities." class="img-fluid">
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-8">
-                        <h2 class="w-title">Driving Game</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Application</span>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="w-more">
-                          <ul class="project-desc">
-                            <li>A fun and simple HTML5, CSS, and JavaScript driving game.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-thirty">
-              <div class="workbox">
-                <a href="https://github.com/Youssef-Najjarine/code-journal?tab=readme-ov-file" target="_blank">
-                  <svg width="80" height="80" viewBox="0 0 250 250"
-                    style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                    <path
-                      d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                      fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                    <path
-                      d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                      fill="currentColor" class="octo-body"></path>
-                  </svg>
-                </a>
-                <a href="https://raw.githubusercontent.com/Youssef-Najjarine/code-journal/master/code-journal-demo.gif"
-                  target="_blank">
-                  <div class="work-img">
-                    <img src="images/codeJournal.png" alt="code journal meant for creating entries" class="img-fluid">
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-8">
-                        <h2 class="w-title">Code Journal</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Application</span>
-                        </div>
-                      </div>
-
-                      <div class="col-12">
-                        <div class="w-more">
-                          <ul class="project-desc">
-                            <li>A dynamic HTML5, CSS3, and JavaScript journal application for coders who want to capture their notes.</li>
-                            <li>Stored journal entries into localStorage using JSON.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-thirty">
-              <div class="workbox">
-                <a href="https://github.com/Youssef-Najjarine/week-planner?tab=readme-ov-file" target="_blank">
-                  <svg width="80" height="80" viewBox="0 0 250 250"
-                    style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                    <path
-                      d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                      fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                    <path
-                      d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                      fill="currentColor" class="octo-body"></path>
-                  </svg>
-                </a>
-                <a href="https://raw.githubusercontent.com/Youssef-Najjarine/week-planner/master/imgs/weekly-planner-demo.gif"
-                  target="_blank">
-                  <div class="work-img">
-                    <img src="images/weeklyPlanner.png" alt="An app meant for plannig out your week" class="img-fluid">
-                  </div>
-                  <div class="work-content">
-                    <div class="row">
-                      <div class="col-8">
-                        <h2 class="w-title">Weekly Planner</h2>
-                        <div class="w-more">
-                          <span class="w-ctegory">Web Application</span>
-                        </div>
-                      </div>
-
-                      <div class="col-12">
-                        <div class="w-more">
-                          <ul class="project-desc">
-                            <li>A weekly planner app built using HTML5, CSS3, and vanilla JavaScript.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+    <div class="col-thirty tools-img-template">
+      <div class="service-box">
+        <div class="service-icon">
+          <span class="icon-circle">
+            <img class="img-icons" />
+          </span>
         </div>
-    </section>
-    <section id="skills">
-        <div class="page-container">
-            <div class="mainSubDiv">
-                <div class="col-full headers">
-                    <h3 class="title-a">Skills</h3>
-                    <div class="line-mf"></div>
-                </div>
-            </div>
-            <div class="row"></div>
+        <div>
+          <h2 class="s-title"></h2>
+          <p></p>
         </div>
-    </section>
-    <section id="tools">
-        <div class="page-container">
-            <div class="mainSubDiv">
-                <div class="col-full headers">
-                    <h3 class="title-a">Tools</h3>
-                    <div class="line-mf"></div>
-                </div>
-            </div>
-            <div class="row"></div>
-        </div>
-    </section>
-    <section id="contact" class="contact-bg">
-        <div class="overlay-mf"></div>
-        <div class="page-container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12">
-                    <div class="contact-mf">
-                        <div class="box-shadow-full-contact contact-white-box">
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 text-center">
-                                    <div class="title-box-2">
-                                        <h5 class="title-left-contact">Thank You</h5>
-                                    </div>
-                                    <div class="more-info">
-                                        <p class="lead">I am willing and able to relocate at short notice.</p>
-                                        <ul class="list-ico">
-                                            <li>
-                                                <span class="ion-ios-location"><i class="fa-solid fa-location-dot"></i>Dallas County, TX 75039</span>
-                                            </li>
-                                            <li>
-                                                <a href="tel:+19497359148"><i class="fa-solid fa-phone"></i>(949) 735 9148</a>
-                                            </li>
-                                            <li>
-                                                <a href="mailto:ynajjarine@gmail.com"><i class="fa-solid fa-envelope"></i>ynajjarine@gmail.com</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="socials col-full">
-                                        <ul class="row">
-                                            <li>
-                                                <a href="https://github.com/Youssef-Najjarine" target="_blank">
-                                                    <span class="ico-circle">
-                                                        <i class="fa-brands fa-github about-ico"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.linkedin.com/in/youssefnajjarine/" target="_blank">
-                                                    <span class="ico-circle">
-                                                        <i class="fa-brands fa-linkedin about-ico"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://drive.google.com/file/d/15wwo1cKvs7kHcA5h6_ulBtiMXLvy9zbr/view" download="myResume" target="_blank">
-                                                    <span class="ico-circle">
-                                                        <i class="fa-solid fa-file about-ico"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="mailto:ynajjarine@gmail.com">
-                                                    <span class="ico-circle">
-                                                        <i class="fa-solid fa-envelope about-ico"></i>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p class="copyright">© Youssef Najjarine 2022. All logos appearing on site are the property of their respective owners.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="templates">
-        <div class="col-thirty skills-template">
-            <div class="service-box">
-                <div class="service-icon">
-                    <span class="icon-circle">
-                        <i class="icons"></i>
-                    </span>
-                </div>
-                <div>
-                    <h2 class="s-title"></h2>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-thirty skills-img-template">
-            <div class="service-box">
-                <div class="service-icon">
-                    <span class="icon-circle">
-                        <img class="img-icons"/>
-                    </span>
-                </div>
-                <div>
-                    <h2 class="s-title"></h2>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-thirty tools-template">
-            <div class="service-box">
-                <div class="service-icon">
-                    <span class="icon-circle">
-                        <img class="img-icons"/>
-                    </span>
-                </div>
-                <div>
-                    <h2 class="s-title"></h2>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-thirty tools-img-template">
-            <div class="service-box">
-                <div class="service-icon">
-                    <span class="icon-circle">
-                        <img class="img-icons"/>
-                    </span>
-                </div>
-                <div>
-                    <h2 class="s-title"></h2>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
