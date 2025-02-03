@@ -24,6 +24,31 @@ $(document).ready(function() {
         },
         {
             icon: '',
+            img: 'images/c_sharp_icon.png',
+            header: 'C#',
+            description: 'C Sharp'
+        },
+        {
+            icon: '',
+            img: 'images/java_icon.png',
+            header: 'Java',
+            description: '__________'
+        },
+        {
+            icon: '',
+            img: 'images/python_icon.png',
+            header: 'Python',
+            description: '__________'
+        },
+        {
+            icon: '',
+            img: 'images/net_icon.png',
+            header: '.net',
+            description: '__________'
+            
+        },
+        {
+            icon: '',
             img: 'images/jquery_icon.png',
             header: 'jquery',
             description: '__________'
@@ -47,7 +72,7 @@ $(document).ready(function() {
             icon: '',
             img: 'images/mySql_icon.png',
             header: 'mysql',
-            description: '__________'
+            description: 'Structured Query Language'
             
         },
         {
@@ -124,7 +149,21 @@ $(document).ready(function() {
             icon: '',
             img: 'images/vsCode_icon.png',
             header: 'vs code',
-            description: 'Visual Studio'
+            description: 'Visual Studio Code'
+            
+        },
+        {
+            icon: '',
+            img: 'images/visual_studio_icon.png',
+            header: 'visual studio',
+            description: '__________'
+            
+        },
+        {
+            icon: '',
+            img: 'images/eclipse_icon.png',
+            header: 'eclipse',
+            description: '__________'
             
         },
         {
