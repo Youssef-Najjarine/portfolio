@@ -1,0 +1,175 @@
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .phrase-div div {
+      font-size: 1.2rem;
+    }
+
+    .col-forty,
+    .col-thirty,
+    .col-fifty,
+    .col-sixty {
+      width: 100%;
+    }
+
+    .first-nav-div {
+        font-size: 1rem;
+    }
+
+    nav {
+      flex-direction: column;
+      padding-top: .75rem;
+      padding-bottom: 5px;
+    }
+    .second-nav-div {
+      font-size: 0.7rem;
+    }
+    .service-box {
+      margin: 1rem;
+    }
+  }
+  
+  /* Fix for Contact Us/Thank You on small screens */
+@media (max-width: 575.98px) {
+    #contact .contact-white-box {
+      width: 90%; /* Make the box fit the screen */
+      margin: 20px auto; /* Center the box */
+    }
+    .copyright {
+      position: static; /* Remove absolute positioning */
+      text-align: center;
+      margin: 10px 0;
+    }
+    .socials ul {
+      justify-content: center; /* Center-align social icons */
+      flex-wrap: wrap;
+    }
+    .socials li {
+      margin: 5px; /* Reduce spacing between icons */
+    }
+    .contact-mf ul.list-ico li {
+      text-align: center; /* Center-align contact info */
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Fix for About Me photos and text on small screens */
+@media (max-width: 575.98px) {
+    #about .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    #about .profile-div img {
+      width: 80%; /* Scale the image for smaller screens */
+      max-width: 300px;
+    }
+    #about .col-fifty {
+      width: 100%; /* Stack content vertically */
+      max-width: 100%;
+      text-align: center;
+    }
+    #about h2 {
+      font-size: 1.5rem; /* Scale down the font size */
+    }
+    .socials ul {
+      flex-wrap: wrap;
+    }
+    .socials li {
+      margin: 10px; /* Adjust spacing between social icons */
+    }
+  }
+  
+  /* General fixes for images and section layout on mobile */
+@media (max-width: 575.98px) {
+    .workbox {
+      margin-bottom: 20px; /* Reduce spacing */
+    }
+    .work-img img {
+      width: 100%; /* Ensure project images scale down */
+      height: auto;
+    }
+    .service-box {
+      margin: 1rem auto; /* Center service boxes */
+    }
+    .headers h3 {
+      font-size: 1.8rem; /* Scale down section headers */
+    }
+
+    #about .cur-github-contributions {
+        width: 90%; /* Scale the width to fit within the screen */
+        max-width: 300px; /* Set a reasonable max width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure proper alignment */
+        margin: 10px auto; /* Center the image */
+      }
+  }
+  
+  /* Small devices (tablets, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    .phrase-div div {
+      font-size: 1.5rem;
+    }
+    .col-thirty {
+      width: 50%;
+    }
+    .second-nav-div {
+      font-size: 0.9rem;
+    }
+    .service-box {
+      margin: 1.5rem;
+    }
+  }
+  
+  /* Medium devices (desktops, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+    .phrase-div div {
+      font-size: 2rem;
+    }
+    .col-thirty {
+      width: 33.33%;
+    }
+    .second-nav-div {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 4.5rem;
+    }
+    .phrase-div div {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 22px;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  
