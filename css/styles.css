@@ -343,3 +343,31 @@
     font-weight: 600;
   }
 }
+
+/* Base underline setup for all desktop nav links */
+.nav-desktop .scrollLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 50%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+  opacity: 0.9;
+}
+
+/* Hover + active state when NOT on home (green underline) */
+.custom-navbar.white-bg .nav-desktop .scrollLink:hover::after,
+.custom-navbar.white-bg .nav-desktop .scrollLink.active::after {
+  background-color: #24b67e;
+  transform: scaleX(1);
+}
+
+/* Hover + active state when ON home (white underline) */
+.custom-navbar:not(.white-bg) .nav-desktop .scrollLink:hover::after,
+.custom-navbar:not(.white-bg) .nav-desktop .scrollLink.active::after {
+  background-color: white;
+  transform: scaleX(1);
+}
