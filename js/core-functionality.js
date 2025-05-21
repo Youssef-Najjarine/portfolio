@@ -1,84 +1,98 @@
-
-$(document).ready(function() {
-    $('.scrollLink').click(function (event) {
-        event.preventDefault();
-        $('html').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 500);
-    })
-    let homePage = ($(window).scrollTop() + $(window).innerHeight() > $("#home").offset().top) && ($(window).scrollTop() < $("#home").offset().top + $("#home").outerHeight());
-    let aboutPage = ($(window).scrollTop() + $(window).innerHeight() > $("#about").offset().top) && ($(window).scrollTop() < $("#about").offset().top + $("#about").outerHeight());
-    let projectsPage = ($(window).scrollTop() + $(window).innerHeight() > $("#projects").offset().top) && ($(window).scrollTop() < $("#projects").offset().top + $("#projects").outerHeight());
-    let skillsPage = ($(window).scrollTop() + $(window).innerHeight() > $("#skills").offset().top) && ($(window).scrollTop() < $("#skills").offset().top + $("#skills").outerHeight());
-    let toolsPage = ($(window).scrollTop() + $(window).innerHeight() > $("#tools").offset().top) && ($(window).scrollTop() < $("#tools").offset().top + $("#tools").outerHeight());
-    let contactPage = ($(window).scrollTop() + $(window).innerHeight() > $("#contact").offset().top) && ($(window).scrollTop() < $("#contact").offset().top + $("#contact").outerHeight());
-    if (homePage){
-        $(".fixed-top .second-nav-div a:not(a[href='#home'])").removeClass('green-curPage green-underlined').addClass('white-underlined');
-        $(".fixed-top .second-nav-div a[href='#home']").addClass('white-curPage').removeClass('white-underlined green-underlined');
-        $('.fixed-top a').addClass('white-text').removeClass('green-text');
-    } else if (aboutPage) {
-        $('.fixed-top').addClass('white-bg');
-        $(".fixed-top .second-nav-div a:not(a[href='#about'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-        $("a[href='#about']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-        $('.fixed-top a').addClass('green-text').removeClass('white-text');
-    } else if (projectsPage) {
-        $('.fixed-top').addClass('white-bg');
-        $(".fixed-top .second-nav-div a:not(a[href='#projects'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-        $("a[href='#projects']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-        $('.fixed-top a').addClass('green-text').removeClass('white-text');
-    } else if (skillsPage) {
-        $('.fixed-top').addClass('white-bg');
-        $(".fixed-top .second-nav-div a:not(a[href='#skills'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-        $("a[href='#skills']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-        $('.fixed-top a').addClass('green-text').removeClass('white-text');
-    } else if (contactPage) {
-        $('.fixed-top').addClass('white-bg');
-        $(".fixed-top .second-nav-div a:not(a[href='#tools'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-        $("a[href='#tools']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-        $('.fixed-top a').addClass('green-text').removeClass('white-text');
-    } else if (toolsPage) {
-        $('.fixed-top').addClass('white-bg');
-        $(".fixed-top .second-nav-div a:not(a[href='#contact'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-        $("a[href='#contact']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-        $('.fixed-top a').addClass('green-text').removeClass('white-text');
-    }
-    $(window).on('scroll', function(e) {
-        let homePage = ($(window).scrollTop() + $(window).innerHeight() > $("#home").offset().top) && ($(window).scrollTop() < $("#home").offset().top + $("#home").outerHeight());
-        let aboutPage = ($(window).scrollTop() + $(window).innerHeight() > $("#about").offset().top) && ($(window).scrollTop() < $("#about").offset().top + $("#about").outerHeight());
-        let projectsPage = ($(window).scrollTop() + $(window).innerHeight() > $("#projects").offset().top) && ($(window).scrollTop() < $("#projects").offset().top + $("#projects").outerHeight());
-        let skillsPage = ($(window).scrollTop() + $(window).innerHeight() > $("#skills").offset().top) && ($(window).scrollTop() < $("#skills").offset().top + $("#skills").outerHeight());
-        let toolsPage = ($(window).scrollTop() + $(window).innerHeight() > $("#tools").offset().top) && ($(window).scrollTop() < $("#tools").offset().top + $("#tools").outerHeight());
-        let contactPage = ($(window).scrollTop() + $(window).innerHeight() > $("#contact").offset().top) && ($(window).scrollTop() < $("#contact").offset().top + $("#contact").outerHeight());
-        if (homePage){
-            $('.fixed-top').removeClass('white-bg');
-            $(".fixed-top .second-nav-div a:not(a[href='#home'])").removeClass('green-curPage green-underlined').addClass('white-underlined');
-            $(".fixed-top .second-nav-div a[href='#home']").addClass('white-curPage').removeClass('white-underlined green-underlined');
-            $('.fixed-top a').addClass('white-text').removeClass('green-text');
-        } else if (aboutPage) {
-            $('.fixed-top').addClass('white-bg');
-            $(".fixed-top .second-nav-div a:not(a[href='#about'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-            $("a[href='#about']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-            $('.fixed-top a').addClass('green-text').removeClass('white-text');
-        } else if (projectsPage) {
-            $('.fixed-top').addClass('white-bg');
-            $(".fixed-top .second-nav-div a:not(a[href='#projects'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-            $("a[href='#projects']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-            $('.fixed-top a').addClass('green-text').removeClass('white-text');
-        } else if (skillsPage) {
-            $('.fixed-top').addClass('white-bg');
-            $(".fixed-top .second-nav-div a:not(a[href='#skills'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-            $("a[href='#skills']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-            $('.fixed-top a').addClass('green-text').removeClass('white-text');
-        } else if (contactPage) {
-            $('.fixed-top').addClass('white-bg');
-            $(".fixed-top .second-nav-div a:not(a[href='#tools'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-            $("a[href='#tools']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-            $('.fixed-top a').addClass('green-text').removeClass('white-text');
-        } else if (toolsPage) {
-            $('.fixed-top').addClass('white-bg');
-            $(".fixed-top .second-nav-div a:not(a[href='#contact'])").removeClass('white-curPage green-curPage').addClass('green-underlined');
-            $("a[href='#contact']").addClass('green-curPage').removeClass('white-underlined green-underlined');
-            $('.fixed-top a').addClass('green-text').removeClass('white-text');
-        }
+$(document).ready(function () {
+  // Smooth scrolling
+  document.querySelectorAll('.scrollLink').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        const yOffset = -80;
+        const y = targetEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
     });
+  });
+
+  // Collapse mobile nav on item click
+  $('.navbar-nav a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  // Scroll to top on navbar toggler click
+  $('.navbar-toggler').on('click', function () {
+    setTimeout(() => {
+      if ($('.navbar-collapse').hasClass('show')) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 200);
+  });
+
+  // Collapse mobile nav if clicking outside
+  $(document).on('click', function (e) {
+    if ($('.navbar-collapse').hasClass('show')) {
+      const isInside = $(e.target).closest('.navbar-collapse, .navbar-toggler').length > 0;
+      if (!isInside) {
+        $('.navbar-collapse').collapse('hide');
+      }
+    }
+  });
+
+  // Close mobile menu on resize above breakpoint
+  $(window).on('resize', function () {
+    if ($(window).width() > 1149.98) {
+      $('.navbar-collapse').removeClass('show');
+    }
+  });
+
+  // Update nav styling based on scroll position
+  function updateNavbarState() {
+    const scrollTop = $(window).scrollTop();
+
+    const inView = id => {
+      const el = $(id);
+      if (el.length === 0) return false;
+      return scrollTop + 100 >= el.offset().top && scrollTop < el.offset().top + el.outerHeight();
+    };
+
+    const navbar = $('.custom-navbar');
+    const desktopLinks = $('.nav-desktop .scrollLink');
+    const mobileItems = $('.nav-mobile .nav-item');
+    const mobileLinks = $('.nav-mobile .nav-link.scrollLink');
+
+    let currentSection = '#home';
+    if (inView('#contact')) currentSection = '#contact';
+    else if (inView('#tools')) currentSection = '#tools';
+    else if (inView('#skills')) currentSection = '#skills';
+    else if (inView('#projects')) currentSection = '#projects';
+    else if (inView('#about')) currentSection = '#about';
+
+    // === Desktop Styling ===
+    if (currentSection === '#home') {
+      navbar.removeClass('white-bg');
+      desktopLinks.removeClass('text-green').addClass('text-white');
+    } else {
+      navbar.addClass('white-bg');
+      desktopLinks.removeClass('text-white').addClass('text-green');
+    }
+
+    desktopLinks.removeClass('active');
+    desktopLinks.filter(`[href='${currentSection}']`).addClass('active');
+
+    // === Mobile Styling ===
+    mobileItems.removeClass('border-green');
+    mobileLinks.removeClass('active text-green text-black text-white');
+
+    const currentMobileLink = mobileLinks.filter(`[href='${currentSection}']`);
+    currentMobileLink.addClass('active');
+    currentMobileLink.closest('.nav-item').addClass('border-green');
+
+    if (currentSection === '#home') {
+      mobileLinks.addClass('text-black');
+    } else {
+      mobileLinks.addClass('text-green');
+    }
+  }
+
+  updateNavbarState();
+  $(window).on('scroll resize', updateNavbarState);
 });
