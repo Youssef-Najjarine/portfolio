@@ -18,34 +18,23 @@ $(document).ready(function() {
         },
         {
             icon: '',
+            img: 'images/angular_icon.png',
+            header: 'angular',
+            description: '__________'
+            
+        },
+        {
+            icon: '',
+            img: 'images/typescript_icon.png',
+            header: 'typescript',
+            description: '__________'
+            
+        },
+        {
+            icon: '',
             img: 'images/javaScript_icon.png',
             header: 'JavaScript',
             description: 'ES5/ES6'
-        },
-        {
-            icon: '',
-            img: 'images/c_sharp_icon.png',
-            header: 'C#',
-            description: 'C Sharp'
-        },
-        {
-            icon: '',
-            img: 'images/java_icon.png',
-            header: 'Java',
-            description: '__________'
-        },
-        {
-            icon: '',
-            img: 'images/python_icon.png',
-            header: 'Python',
-            description: '__________'
-        },
-        {
-            icon: '',
-            img: 'images/net_icon.png',
-            header: '.net',
-            description: '__________'
-            
         },
         {
             icon: '',
@@ -67,6 +56,37 @@ $(document).ready(function() {
             header: 'express',
             description: '__________'
             
+        },
+        {
+            icon: '',
+            img: 'images/c_sharp_icon.png',
+            header: 'C#',
+            description: 'C Sharp'
+        },
+        {
+            icon: '',
+            img: 'images/net_icon.png',
+            header: '.net',
+            description: '__________'
+            
+        },
+        {
+            icon: '',
+            img: 'images/java_icon.png',
+            header: 'Java',
+            description: '__________'
+        },
+        {
+            icon: '',
+            img: 'images/python_icon.png',
+            header: 'Python',
+            description: '__________'
+        },
+                {
+            icon: '',
+            img: 'images/azure_icon.png',
+            header: 'azure',
+            description: '__________'
         },
         {
             icon: '',
@@ -106,8 +126,8 @@ $(document).ready(function() {
         {
             icon: '',
             img: 'images/bootstrap_icon.png',
-            header: 'bootstrap',
-            description: '3 and 4'
+            header: 'bootstrap 5',
+            description: '__________'
             
         },
         {

@@ -137,8 +137,11 @@
       height: 328px;
       object-fit: inherit;
     }
+    h1 {
+        font-size: 2.5rem;
+    }
     #phraseWrapper {
-      font-size: 2.5rem;
+      font-size: 2.1rem;
       min-height: 48px;
       font-style: italic;
       font-weight: 300;
@@ -370,4 +373,50 @@
 .custom-navbar:not(.white-bg) .nav-desktop .scrollLink.active::after {
   background-color: white;
   transform: scaleX(1);
+}
+
+.project-template .tech-stack-wrapper {
+  min-height: 2rem;
+}
+.badge-tech {
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.badge-tech:hover {
+  background-color: #e6f4ea;
+}
+
+@media (max-width: 1149.98px) {
+  .navbar-collapse {
+    box-shadow: none !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar.nav-mobile {
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nav-mobile .nav-link {
+    font-size: 1rem !important;
+    padding: 0.5rem 0.5rem !important;
+  }
+}
+@media (max-width: 300px) {
+  .nav-mobile .nav-link {
+    font-size: .5rem !important;
+  }
+}
+
+#backToTop {
+  border-radius: 50%;
+  padding: 0.75rem 0.9rem;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
