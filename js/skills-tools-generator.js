@@ -236,6 +236,13 @@ $(document).ready(function() {
         },
         {
             icon: '',
+            img: 'images/springData_icon.png',
+            header: 'spring data',
+            description: '__________'
+            
+        },
+        {
+            icon: '',
             img: 'images/npm_icon.png',
             header: 'npm',
             description: 'Node Package Manager'
