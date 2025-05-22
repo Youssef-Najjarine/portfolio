@@ -82,7 +82,7 @@ $(document).ready(function() {
             header: 'Python',
             description: '__________'
         },
-                {
+        {
             icon: '',
             img: 'images/azure_icon.png',
             header: 'azure',
@@ -90,8 +90,21 @@ $(document).ready(function() {
         },
         {
             icon: '',
+            img: 'images/aws_icon.png',
+            header: 'aws',
+            description: 'Amazon Web Services'
+        },
+        {
+            icon: '',
             img: 'images/mySql_icon.png',
             header: 'mysql',
+            description: 'My Structured Query Language'
+            
+        },
+        {
+            icon: '',
+            img: 'images/sql_icon.png',
+            header: 'sql',
             description: 'Structured Query Language'
             
         },
@@ -107,6 +120,20 @@ $(document).ready(function() {
             img: 'images/oracle_icon.png',
             header: 'oracle',
             description: '__________'
+            
+        },
+        {
+            icon: '',
+            img: 'images/microsoftSqlServer_icon.png',
+            header: 'mssql',
+            description: 'Microsoft SQL Server'
+            
+        },
+        {
+            icon: '',
+            img: 'images/api_icon.png',
+            header: 'api',
+            description: 'Application Programming Interface'
             
         },
         {
@@ -167,6 +194,13 @@ $(document).ready(function() {
         },
         {
             icon: '',
+            img: 'images/git_icon.png',
+            header: 'git',
+            description: '__________'
+            
+        },
+        {
+            icon: '',
             img: 'images/vsCode_icon.png',
             header: 'vs code',
             description: 'Visual Studio Code'
@@ -188,9 +222,17 @@ $(document).ready(function() {
         },
         {
             icon: '',
-            img: 'images/babel_icon.png',
-            header: 'babel',
+            img: 'images/mssm_icon.png',
+            header: 'ssms',
+            description: 'SQL Server Management Studio'
+            
+        },
+        {
+            icon: '',
+            img: 'images/springBoot_icon.png',
+            header: 'spring boot',
             description: '__________'
+            
         },
         {
             icon: '',
@@ -203,8 +245,13 @@ $(document).ready(function() {
             icon: '',
             img: 'images/webpack_icon.png',
             header: 'webpack',
+            description: '__________'    
+        },
+        {
+            icon: '',
+            img: 'images/babel_icon.png',
+            header: 'babel',
             description: '__________'
-            
         }
     ];
     tools.forEach(function(tool) {
