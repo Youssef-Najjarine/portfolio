@@ -1,7 +1,14 @@
 $(document).ready(function () {
   $('.scrollLink').on('click', function (e) {
     e.preventDefault();
-    const targetId = $(this).attr('href');
+    let targetId = $(this).html().toLowerCase();
+    const $navbarCollapse = $('.navbar-collapse');
+    if (targetId == "resume") {
+        if ($navbarCollapse.hasClass('show')) {
+            $navbarCollapse.collapse('hide');
+        }
+        return window.open(this.href, "_blank");
+    } else targetId = $(this).attr('href');
     const $targetEl = $(targetId);
 
     if ($targetEl.length) {
@@ -10,7 +17,7 @@ $(document).ready(function () {
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
-    const $navbarCollapse = $('.navbar-collapse');
+    
     if ($navbarCollapse.hasClass('show')) {
       $navbarCollapse.collapse('hide');
     }
