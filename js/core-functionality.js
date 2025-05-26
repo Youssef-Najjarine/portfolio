@@ -49,53 +49,55 @@ $(document).ready(function () {
   });
 
   // Active section tracking
-  function updateNavbarState() {
-    const scrollTop = $(window).scrollTop();
+function updateNavbarState() {
+  const scrollTop = $(window).scrollTop();
 
-    const inView = id => {
-      const $el = $(id);
-      if ($el.length === 0) return false;
-      return scrollTop + 100 >= $el.offset().top && scrollTop < $el.offset().top + $el.outerHeight();
-    };
+  const inView = id => {
+    const $el = $(id);
+    if ($el.length === 0) return false;
+    return scrollTop + 150 >= $el.offset().top && scrollTop < $el.offset().top + $el.outerHeight();
+  };
 
-    const $navbar = $('.custom-navbar');
-    const $desktopLinks = $('.nav-desktop .scrollLink');
-    const $mobileItems = $('.nav-mobile .nav-item');
-    const $mobileLinks = $('.nav-mobile .nav-link.scrollLink');
+  const $navbar = $('.custom-navbar');
+  const $desktopLinks = $('.nav-desktop .scrollLink');
+  const $mobileItems = $('.nav-mobile .nav-item');
+  const $mobileLinks = $('.nav-mobile .nav-link.scrollLink');
 
-    let currentSection = '#home';
-    if (inView('#contact')) currentSection = '#contact';
-    else if (inView('#tools')) currentSection = '#tools';
-    else if (inView('#skills')) currentSection = '#skills';
-    else if (inView('#projects')) currentSection = '#projects';
-    else if (inView('#about')) currentSection = '#about';
+  // Order matters: deepest section checked first
+  let currentSection = '#home';
+  if (inView('#contact')) currentSection = '#contact';
+  else if (inView('#tech-stack')) currentSection = '#tech-stack';
+  else if (inView('#projects')) currentSection = '#projects';
+  else if (inView('#education')) currentSection = '#education';
+  else if (inView('#work-history')) currentSection = '#work-history';
+  else if (inView('#about')) currentSection = '#about';
 
-    // Desktop styles
-    if (currentSection === '#home') {
-      $navbar.removeClass('white-bg');
-      $desktopLinks.removeClass('text-green').addClass('text-white');
-    } else {
-      $navbar.addClass('white-bg');
-      $desktopLinks.removeClass('text-white').addClass('text-green');
-    }
-
-    $desktopLinks.removeClass('active');
-    $desktopLinks.filter(`[href='${currentSection}']`).addClass('active');
-
-    // Mobile styles
-    $mobileItems.removeClass('border-green');
-    $mobileLinks.removeClass('active text-green text-black text-white');
-
-    const $currentMobileLink = $mobileLinks.filter(`[href='${currentSection}']`);
-    $currentMobileLink.addClass('active');
-    $currentMobileLink.closest('.nav-item').addClass('border-green');
-
-    if (currentSection === '#home') {
-      $mobileLinks.addClass('text-black');
-    } else {
-      $mobileLinks.addClass('text-green');
-    }
+  // Desktop navbar styling
+  if (currentSection === '#home') {
+    $navbar.removeClass('white-bg');
+    $desktopLinks.removeClass('text-green').addClass('text-white');
+  } else {
+    $navbar.addClass('white-bg');
+    $desktopLinks.removeClass('text-white').addClass('text-green');
   }
+
+  $desktopLinks.removeClass('active');
+  $desktopLinks.filter(`[href='${currentSection}']`).addClass('active');
+
+  // Mobile navbar styling
+  $mobileItems.removeClass('border-green');
+  $mobileLinks.removeClass('active text-green text-black text-white');
+
+  const $currentMobileLink = $mobileLinks.filter(`[href='${currentSection}']`);
+  $currentMobileLink.addClass('active');
+  $currentMobileLink.closest('.nav-item').addClass('border-green');
+
+  if (currentSection === '#home') {
+    $mobileLinks.addClass('text-black');
+  } else {
+    $mobileLinks.addClass('text-green');
+  }
+}
 
   updateNavbarState();
   $(window).on('scroll resize', updateNavbarState);

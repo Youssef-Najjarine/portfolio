@@ -4,7 +4,7 @@ $(document).ready(function () {
 const projects = [
   {
     github: "https://github.com/Youssef-Najjarine/fitness-pal",
-    img: "images/fitnessPaL.png",
+    img: "images/projects/fitnessPaL.png",
     title: "Fitness Pal",
     description: "Track workouts, calculate BMR, and manage meals using Express.js and JSON storage.",
     demo: "https://raw.githubusercontent.com/Youssef-Najjarine/fitness-pal/master/full-fitnessPalDemo.gif",
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     github: "https://github.com/Youssef-Najjarine/anime-fans",
-    img: "images/animeTrivia.png",
+    img: "images/projects/animeTrivia.png",
     title: "Anime Fans",
     description: "A trivia app pulling API data and using AJAX to display dynamic anime quizzes.",
     demo: "https://user-images.githubusercontent.com/71291742/145110268-b60c0a8d-8cb5-409f-9b7f-e9fd378bbf58.gif",
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     github: "https://github.com/Youssef-Najjarine/student-profile-2088",
-    img: "images/profileSearch.png",
+    img: "images/projects/profileSearch.png",
     title: "Profile Manager",
     description: "Search and manage student profiles using Node.js, MySQL/PostgreSQL, and React.",
     demo: "https://user-images.githubusercontent.com/71291742/153488000-5d5fcdc5-5e32-4921-b5fa-83fc093e8d39.gif",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     github: "https://github.com/Youssef-Najjarine/driving-game",
-    img: "images/drivingGame.png",
+    img: "images/projects/drivingGame.png",
     title: "Driving Game",
     description: "A fun and simple HTML5, CSS, and JavaScript driving game with obstacle avoidance.",
     demo: "https://raw.githubusercontent.com/Youssef-Najjarine/driving-game/master/driving-game-demo.gif",
@@ -56,7 +56,7 @@ const projects = [
   },
   {
     github: "https://github.com/Youssef-Najjarine/code-journal",
-    img: "images/codeJournal.png",
+    img: "images/projects/codeJournal.png",
     title: "Code Journal",
     description: "A dynamic journal for coders to store notes with HTML5, CSS3, and JavaScript.",
     demo: "https://raw.githubusercontent.com/Youssef-Najjarine/code-journal/master/code-journal-demo.gif",
@@ -69,7 +69,7 @@ const projects = [
   },
   {
     github: "https://github.com/Youssef-Najjarine/week-planner",
-    img: "images/weeklyPlanner.png",
+    img: "images/projects/weeklyPlanner.png",
     title: "Weekly Planner",
     description: "A weekly planner app built using HTML5, CSS3, and vanilla JavaScript.",
     demo: "https://raw.githubusercontent.com/Youssef-Najjarine/week-planner/master/imgs/weekly-planner-demo.gif",
