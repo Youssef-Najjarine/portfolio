@@ -52,7 +52,7 @@ const workHistory = [
     jobTitle: "Intern",
     companyName: "SyncopationAI",
     startDate: "April 2024",
-    endDate: "Present",
+    endDate: "May 2025",
     summary: "Designed and maintained a responsive marketing website using JavaScript, jQuery, and CSS3. Enhanced interactivity with features like an audio carousel and automated demo request forms. Focused on cross-browser compatibility, responsiveness, and UX improvements using real-time feedback and iterative testing.",
     bullets: [
       "Developed and styled responsive pages using HTML, CSS3, and JS.",
