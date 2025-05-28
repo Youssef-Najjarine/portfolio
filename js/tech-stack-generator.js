@@ -23,10 +23,14 @@ $(document).ready(function () {
     { img: 'images/icons/java_icon.png', header: 'Java', description: 'Object-Oriented Language' },
     { img: 'images/icons/springBoot_icon.png', header: 'Spring Boot', description: 'Java Microservice Framework' },
     { img: 'images/icons/springData_icon.png', header: 'Spring Data', description: 'Java ORM/Data Layer' },
+    { img: 'images/icons/IntelliJ_icon.png', header: 'IntelliJ', description: 'JetBrains-Powered Java IDE' },
     { img: 'images/icons/eclipse_icon.png', header: 'Eclipse', description: 'Java IDE' },
 
     // Python
     { img: 'images/icons/python_icon.png', header: 'Python', description: 'Multi-Paradigm Language' },
+    { img: 'images/icons/anaconda_icon.png', header: 'Anaconda', description: 'Data Science Platform' },
+    { img: 'images/icons/pycharm_icon.png', header: 'PyCharm', description: 'Python IDE by JetBrains' },
+    { img: 'images/icons/jupyter_icon.png', header: 'Jupyter', description: 'Interactive Notebook Environment' },
 
     // Cloud & APIs
     { img: 'images/icons/aws_icon.png', header: 'AWS', description: 'Amazon Web Services' },
