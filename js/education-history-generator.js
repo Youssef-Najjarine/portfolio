@@ -19,7 +19,12 @@ const educationHistory = [
       "C# .NET", "ASP.NET Core", "Java", "Spring Boot", "Spring Data", "SQL Server", "Azure",
       "CI/CD", "TDD", "REST APIs", "Agile", "JSON", "MVC Architecture", "Console Applications"
     ],
-    certificates: []
+    certificates: [
+      {
+        label: "Full Stack C#.NET & Java",
+        link: "https://drive.google.com/file/d/1h909-nKtgkKi1ApLx_YDHu2rDXSBBxMd/view?usp=sharing"
+      }
+    ]
   },
   {
     logo: "images/companyLogos/lucentary-logo.png",

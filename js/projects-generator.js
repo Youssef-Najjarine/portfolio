@@ -16,6 +16,35 @@ const projects = [
     ]
   },
   {
+    github: "https://github.com/Youssef-Najjarine/chuckle-norris",
+    img: "images/projects/chuckleNorris.png",
+    title: "Chuckle Norris",
+    description: "An Angular and Java site where users view, rank, and create funny Chuck Norris jokes to share.",
+    demo: "https://github.com/Youssef-Najjarine/chuckle-norris/blob/main/chuckle-norris-demo.gif",
+    tech: [
+      "JavaScript", "Angular", "Java",
+      "PostgreSQL", "pgAdmin", "SQL",
+      "RESTful APIs", "HTTP Methods", "Routing", "Components", "Services", 
+      "Data Binding", "Dependency Injection", "Observables", "TypeScript",
+      "Spring Boot", "Spring Data", 
+      "HTML", "CSS3", "Bootstrap", 
+      "Mobile Responsiveness", "Responsive Layout", "DOM Manipulation", 
+       "Visual Studio Code", "IntelliJ", "Git", "GitHub"
+    ]
+  },  
+  {
+    github: "https://github.com/Youssef-Najjarine/brocknejones-preview",
+    img: "images/projects/brockneJones.png",
+    title: "Brockne Jones",
+    description: "A Vue.js memorial website for Brockne Jones. Showcasing his life as a musician and a speaker.",
+    demo: "https://github.com/Youssef-Najjarine/brocknejones-preview/blob/fcc33e250a765b576ac8b463990dca649e43610a/brockne-jones-demo.gif",
+    tech: [
+      "JavaScript", "Vue.js", "Azure","HTML5", "CSS3", "Bootstrap", 
+      "Mobile Responsiveness", "Responsive Layout", "DOM Manipulation", 
+      "Apple Music API", "YouTube IFrame API", "Lite YouTube Embed", "Visual Studio Code", "Git", "GitHub"
+    ]
+  },  
+  {
     github: "https://github.com/Youssef-Najjarine/anime-fans",
     img: "images/projects/animeTrivia.png",
     title: "Anime Fans",
@@ -53,7 +82,7 @@ const projects = [
       "Sprites", "Animations", "Local Storage", "Responsive Layout", 
       "Visual Studio Code", "Git", "GitHub"
     ]
-  },
+  }, 
   {
     github: "https://github.com/Youssef-Najjarine/code-journal",
     img: "images/projects/codeJournal.png",

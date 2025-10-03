@@ -2,6 +2,7 @@ $(document).ready(function () {
   const techStack = [
     // JavaScript-related
     { img: 'images/icons/react_icon.png', header: 'React', description: 'JavaScript UI Framework' },
+        { img: 'images/icons/react_native_icon.png', header: 'React Native', description: 'iOS & Android Framework' },
     { img: 'images/icons/vue_icon.png', header: 'vue', description: 'Progressive JS Framework' },
     { img: 'images/icons/angular_icon.png', header: 'Angular', description: 'JavaScript UI Framework' },
     { img: 'images/icons/angularjs_icon.png', header: 'AngularJS', description: 'Legacy JS Framework' },
