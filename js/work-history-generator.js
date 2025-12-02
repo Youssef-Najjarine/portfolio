@@ -5,7 +5,7 @@ const workHistory = [
   {
     companyLogo: "images/companyLogos/hometown-services-logo.png",
     companyUrl: "https://www.hometownservices.com",
-    jobTitle: "JSON Developer",
+    jobTitle: "Software Developer",
     companyName: "HomeTown Services",
     startDate: "April 2025",
     endDate: "Present",
@@ -48,7 +48,7 @@ const workHistory = [
   },
   {
     companyLogo: "images/companyLogos/syncopationAI-logo.png",
-    companyUrl: "https://syncopation.ai",
+    companyUrl: "https://youssef-najjarine.github.io/syncopation.ai/",
     jobTitle: "Intern",
     companyName: "SyncopationAI",
     startDate: "April 2024",
