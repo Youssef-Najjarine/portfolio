@@ -36,6 +36,7 @@ $(document).ready(function () {
     // Cloud & APIs
     { img: 'images/icons/aws_icon.png', header: 'AWS', description: 'Amazon Web Services' },
     { img: 'images/icons/azure_icon.png', header: 'Azure', description: 'Microsoft Cloud Platform' },
+    { img: 'images/icons/azure_devops_icon.png', header: 'Azure DevOps', description: 'Cloud DevOps platform' },
     { img: 'images/icons/api_icon.png', header: 'API', description: 'Application Programming Interface' },
 
     // Databases

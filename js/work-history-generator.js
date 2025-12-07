@@ -8,20 +8,24 @@ const workHistory = [
     jobTitle: "Software Developer",
     companyName: "HomeTown Services",
     startDate: "April 2025",
-    endDate: "Present",
-    summary: "Developed and maintained custom JSON-based call scripts to optimize CSR workflows for clients like John Moore and Texas Air Zone. Worked closely with CSRs, managers, and trainers to gather requirements, implement job types, QA test logic, and maintain version control. Ensured smooth deployment and accurate routing of customer interactions using ServiceTitan.",
+    endDate: "December 2025",
+
+    summary:
+      "Developed scalable JSON and JavaScript-based call scripts used across Residential + Commercial onboarding for clients such as John Moore, Texas Air Zone, Kennon Heating & Air, and Murray Electric. Configured ServiceTitan workflows, automated intake logic, and improved CSR usability, enabling smoother routing, faster data capture, and lower call friction during live customer intake.",
+
     bullets: [
-      "Built dynamic JSON scripts tailored to client workflows and needs.",
-      "Collaborated with stakeholders to gather feedback and implement updates.",
-      "QA-tested scripts to ensure expected logic paths and error handling.",
-      "Structured job types and business units for accurate service routing.",
-      "Utilized Git-based version control to track and deploy script changes.",
-      "Reduced logic redundancy and improved script performance in production."
+      "Engineered conditional logic, auto-generated fields, and decision flows to reduce CSR input errors and streamline ServiceTitan forms.",
+      "Built reusable script templates for HVAC, Plumbing, Electric, Generators, Insulation, and Root verticals, accelerating new client installations.",
+      "Configured Tag Types, Business Units, Job Types, and call reasons to ensure accurate routing and operational alignment across departments.",
+      "Partnered with CSRs, supervisors, and QA testers to diagnose breakdowns in workflow, resolve logic defects, and improve real-time script behavior.",
+      "Maintained Git version control for scripts, managing revisions, rollback safety, and controlled rollout of updates to production.",
+      "Created Excel-based tracking spreadsheets to log script changes, QA results, deployment status, and onboarding progress for leadership visibility."
     ],
+
     tech: [
-      "JSON", "ServiceTitan", "Workflow Automation", "Conditional Logic",
-      "Version Control", "Git", "QA Testing", "Debugging", "Agile Collaboration",
-      "Client Communication", "Error Handling", "Scripting", "Logic Trees"
+      "JSON", "JavaScript", "ServiceTitan", "Excel", "Workflow Automation",
+      "Git Version Control", "QA Testing", "Debugging", "Documentation",
+      "Vertical Script Templates", "Process Optimization", "CSR Workflow Design", "TDD"
     ]
   },
   {
@@ -65,7 +69,7 @@ const workHistory = [
     tech: [
       "JavaScript", "jQuery", "HTML5", "CSS3", "EmailJS", "Mailtrap",
       "Responsive Design", "Bluehost", "GoDaddy", "AJAX",
-      "UI/UX", "DOM Manipulation", "Web Hosting", "Media Queries"
+      "UI/UX", "Figma", "DOM Manipulation", "Web Hosting", "Media Queries"
     ]
   },
   {
@@ -85,8 +89,8 @@ const workHistory = [
       "Used 3rd-party relay servers to manage secure portal CRUD access."
     ],
     tech: [
-      "AngularJS", "JavaScript (ES5/ES6)", "MySQL", "Oracle", "JSON",
-      "PowerSchool SIS", "jQuery", "AJAX", "Data Modeling", "Plugin Development",
+      "AngularJS", "JavaScript (ES5/ES6)", "jQuery", "MySQL", "SQL", "Oracle", "JSON",
+      "PowerSchool SIS", "AJAX", "Data Modeling", "Plugin Development",
       "Cross-Portal Integration", "SQL Joins", "Query Optimization",
       "Client Collaboration", "SIS Platforms", "Secure Data Access"
     ]

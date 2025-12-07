@@ -16,8 +16,9 @@ const educationHistory = [
       "Collaborated in Agile teams on capstone projects and peer reviews."
     ],
     tech: [
-      "C# .NET", "ASP.NET Core", "Java", "Spring Boot", "Spring Data", "SQL Server", "Azure",
-      "CI/CD", "TDD", "REST APIs", "Agile", "JSON", "MVC Architecture", "Console Applications"
+      "C# .NET", "ASP.NET Core", "Java", "Spring Boot", "Spring Data", "SQL", "Azure", "Angular",
+      "pgAdmin", "PostgreSQL", "Microsoft SQL Server", "CI/CD", "TDD", "REST APIs", "Agile", "JSON", 
+      "MVC Architecture", "Console Applications", "Figma"
     ],
     certificates: [
       {
@@ -42,7 +43,7 @@ const educationHistory = [
       "Explored layered architecture, dependency injection, and debugging."
     ],
     tech: [
-      "C# .NET", "Java", "Python", "Node.js", "Visual Studio", "TDD", "System-Level Programming",
+      "C# .NET", "Java", "Python", "Node.js", "MySQL", "pgAdmin", "PostgreSQL", "Microsoft SQL Server", "Visual Studio", "Visual Studio Code", "TDD", "System-Level Programming",
       "Design Patterns", "Memory Management", "Windows Services", "JSON", "Debugging",
       "Architecture Design", "Git", "Agile"
     ],
@@ -69,7 +70,7 @@ const educationHistory = [
       "Presented projects and collaborated in code reviews and sprints."
     ],
     tech: [
-      "React.js", "Node.js", "Express.js", "PostgreSQL", "JavaScript (ES6)", "HTML5", "CSS3",
+      "React.js", "Node.js", "Express.js", "MySQL", "PostgreSQL", "JavaScript (ES6)", "HTML5", "CSS3",
       "Agile", "Git", "GitHub", "JSON", "REST APIs", "Responsive Design", "Debugging"
     ],
     certificates: [
