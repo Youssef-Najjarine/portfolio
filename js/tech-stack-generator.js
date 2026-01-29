@@ -14,6 +14,8 @@ $(document).ready(function () {
     { img: 'images/icons/npm_icon.png', header: 'npm', description: 'Node Package Manager' },
     { img: 'images/icons/webpack_icon.png', header: 'Webpack', description: 'Module Bundler' },
     { img: 'images/icons/babel_icon.png', header: 'Babel', description: 'JavaScript Compiler' },
+    { img: 'images/icons/redux_icon.png', header: 'Redux', description: 'State Management Library' },
+    { img: 'images/icons/socket_io_icon.png', header: 'Socket.IO', description: 'Real-Time Communication' },
 
     // C# / .NET
     { img: 'images/icons/c_sharp_icon.png', header: 'C#', description: 'Object-Oriented Language' },
@@ -38,6 +40,7 @@ $(document).ready(function () {
     { img: 'images/icons/azure_icon.png', header: 'Azure', description: 'Microsoft Cloud Platform' },
     { img: 'images/icons/azure_devops_icon.png', header: 'Azure DevOps', description: 'Cloud DevOps platform' },
     { img: 'images/icons/api_icon.png', header: 'API', description: 'Application Programming Interface' },
+    { img: 'images/icons/ruby_icon.png', header: 'Ruby', description: 'Dynamic Programming Language' },
 
     // Databases
     { img: 'images/icons/mySql_icon.png', header: 'MySQL', description: 'Relational Database' },
@@ -52,8 +55,14 @@ $(document).ready(function () {
     { img: 'images/icons/git_icon.png', header: 'Git', description: 'Version Control System' },
     { img: 'images/icons/cmder_icon.png', header: 'cmder', description: 'Terminal Emulator for Windows' },
     { img: 'images/icons/vsCode_icon.png', header: 'VS Code', description: 'Visual Studio Code' },
-    { img: 'images/icons/mssm_icon.png', header: 'SSMS', description: 'SQL Server Management Studio' },
+    { img: 'images/icons/visual_studio_icon.png', header: 'Visual Studio', description: 'C# IDE' },
+    { img: 'images/icons/xcode_icon.png', header: 'Xcode', description: 'iOS Development IDE' },
+    { img: 'images/icons/android_studio_icon.png', header: 'Android Studio', description: 'Android Development IDE' },
+    { img: 'images/icons/postman_icon.png', header: 'Postman', description: 'API Testing Tool' },
+    { img: 'images/icons/slack_icon.png', header: 'Slack', description: 'Team Communication Platform' },
+    { img: 'images/icons/yaml_icon.png', header: 'YAML', description: 'Configuration Markup Language' },
     { img: 'images/icons/figma_icon.png', header: 'Figma', description: 'UI/UX Design Tool' },
+
   ];
 
   techStack.forEach(function (item) {
